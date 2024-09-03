@@ -1,3 +1,2 @@
 # Portfolio-Website
-A modern portfolio showcasing skills, projects, and experience with a sleek design.
-Tech stack-Combination of HTML,CSS,Javascript and React.
+A fully responsive portfolio website using React JS. This website features smooth scrolling functionality, thanks to React Smooth Scroll, and includes a functional contact form. The contact form is designed to send inquiries directly to your email address, ensuring you can efficiently manage and respond to messages from your visitors. 
