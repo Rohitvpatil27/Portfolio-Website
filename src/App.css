@@ -1,0 +1,11 @@
+/* Add the slide-in effect */
+.section {
+  opacity: 0;
+  transform: translateY(50px); /* Slide in from below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+.section.in-view {
+  opacity: 1;
+  transform: translateY(0); /* Slide to original position */
+}

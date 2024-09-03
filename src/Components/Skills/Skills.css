@@ -1,0 +1,173 @@
+#skills {
+  padding: 40px;
+  background: #0a0a0a; 
+}
+
+.skills-category {
+  margin-bottom: 40px;
+}
+
+.skills-category h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  background: /*white*/  linear-gradient(270deg, #3C8CE7 25%, #00EAFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-info h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  background: /*white*/  linear-gradient(270deg, #3C8CE7 25%, #00EAFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Container for Skill Cards */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#databases .skills-container {
+  justify-content: center; 
+}
+
+#databases .card {
+  margin: 0 auto; 
+}
+/* Card Styling */
+.card {
+  width: 220px;
+  background: #1c1c1c; 
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  z-index: 1; 
+}
+
+
+.card:hover {
+  transform: scale(1.08) translateX(10px) !important; 
+  background: linear-gradient(45deg,#ABDCFF, #0396FF) !important; 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 0 0 15px #0396FF !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important; 
+}
+
+
+
+/* Icon with Glow Effect */
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover .skill-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #df8908); 
+}
+
+/* Skill Info */
+.skill-info h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.card:hover h2 {
+  color: #df8908; 
+}
+
+/* Progress Bar Container */
+.skill-progress {
+  position: relative;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.progress {
+  height: 100%;
+  background: #76c7c0;
+  border-radius: 10px;
+  width: 55%; 
+  transition: width 0.4s ease;
+}
+
+.card:hover .progress {
+  width: 80%; 
+  background: linear-gradient(270deg, #DF8908, #B415FF);
+}
+
+/* Advanced Hover Effect */
+.card:hover .skill-icon {
+  transform: rotate(360deg); 
+}
+.card:hover h2 {
+  background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyframes for Loading Effect */
+@keyframes load {
+  from {
+      width: 0;
+  }
+  to {
+      width: var(--progress-width, 0%);
+  }
+}
+
+/* Soft Skills Section */
+.soft-skill-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #3a3a3a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 20px;
+  font-size: 1.2em;
+  color: white;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+}
