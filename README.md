@@ -3,13 +3,16 @@ A fully responsive portfolio website using React JS. This website features smoot
 
 
 Installation and Setup
+
 Step 1: Install Node.js (Skip if Already Installed)
 Visit nodejs.org and download the installer.
 Run the installer and follow the prompts.
+
 Step 2: Install Dependencies
 Open your terminal and navigate to the project directory.
 Run: **npm install**
 Ensure the node_modules folder appears in the project directory.
+
 Step 3: Start the Development Server
 Run: **npm run dev**
 Open your browser and go to http://localhost:3000 (or the specified URL) to view your project.
